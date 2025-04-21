@@ -1,10 +1,9 @@
 .h1-title{
-   color: #000;
-  font-weight: 600;
-  line-height: 32px;
-  font-size: 24px;
-  opacity: 0.8;
-  font-family: sans-serif;
+   color:var(--black);
+  font-weight: 700;
+  line-height:100%;
+  font-size: var(--lg);
+  font-family: Roboto;
 }
 .h1{
  
@@ -15,10 +14,9 @@
 }
 
 .h2{
-font-size: 18px;
-   display: flex;
-   justify-content: flex-start;
-margin:  20px 0;
+   font-size: var(--lg);
+ 
+margin-bottom:  20px;
    
 }
 
