@@ -7,6 +7,9 @@ import { createPost, deletePost, getPosts, updatePost } from '../../services/api
 export default function Post({username}) {
 
     const [posts, setPosts] = useState([]);
+
+   
+
     const fetchPosts = async () => {
         const response = await getPosts();
         setPosts(response.data.results.reverse()); // mais recente primeiro

@@ -40,7 +40,7 @@ export default function PostItem({ post, isOwner, onUpdate, onDelete }) {
      <span className="post-meta">
         @{post.username} 
        </span>
-      <span className='span'> {formatDistanceToNow(new Date(post.created_datetime))}</span>
+      <span className='span'> {formatDistanceToNow(new Date(post.created_datetime),{ addSuffix: true })}</span>
      </div>
    
 

@@ -1,20 +1,20 @@
-.signup
- {
+.signup {
   max-width: 500px;
  height: 205px;
   background: var(--white);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 .btn-login{
   display: flex;
   padding: 0;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 button{
  width: 120px;
 height: 32px;
-margin-top: 10px;
+
 border-radius: 8px;
 border: none;
 background: var(--azul);
