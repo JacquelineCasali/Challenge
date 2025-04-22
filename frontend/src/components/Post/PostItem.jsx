@@ -1,21 +1,36 @@
 import React, { useState } from 'react'
 import { formatDistanceToNow } from 'date-fns';
-import Modal from '../Modal/Modal';
-import Title from '../Title/Tlite';
+import "./PostItem.css"
 import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
-export default function PostItem({ post, username, onUpdate, onDelete }) {
+import EditModal from '../Modal/EditModal';
+import DeleteModal from '../Modal/DeleteModal';
+import Modal from '../Modal/Modal';
+export default function PostItem({ post, isOwner, onUpdate, onDelete }) {
     const [isEditing, setIsEditing] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
   
-    const isOwner = post.username === username;
+
   return (
     <div className="post-item">
      <div className="post-header">
         <h3>{post.title}</h3>
         {isOwner && (
           <div className="post-actions">
-            <button onClick={() => setIsEditing(true)}>Edit</button>
-            <button onClick={() => setIsDeleting(true)}>Delete</button>
+              <FaRegEdit
+                    className="me-3"
+                    onClick={() => setIsEditing(true)}
+                    size={20}
+                    color={"blue"}
+                    cursor={"pointer"}
+                  />
+                     <FaRegTrashAlt
+                    onClick={() => setIsDeleting(true)}
+                    size={20}
+                    color={"red"}
+                    cursor={"pointer"}
+                  />
+            {/* <button onClick={() => setIsEditing(true)}>Edit</button>
+            <button onClick={() => setIsDeleting(true)}>Delete</button> */}
           </div>
         )}
       </div>     
@@ -27,7 +42,7 @@ export default function PostItem({ post, username, onUpdate, onDelete }) {
       <p className="post-content">{post.content}</p>
 
       {isEditing && (
-        <Modal
+        <EditModal
           title={post.title}
           content={post.content}
           onClose={() => setIsEditing(false)}
@@ -39,7 +54,7 @@ export default function PostItem({ post, username, onUpdate, onDelete }) {
       )}
 
       {isDeleting && (
-        <Modal
+        <DeleteModal
           onCancel={() => setIsDeleting(false)}
           onConfirm={() => {
             onDelete(post.id);

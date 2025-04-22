@@ -8,7 +8,7 @@ export default function PostList({posts, username, onUpdate, onDelete}) {
         <PostItem 
           key={post.id} 
           post={post}
-          isOwner={post.username === username}
+          isOwner={post.username.trim().toLowerCase() === username.trim().toLowerCase()}
           onUpdate={onUpdate}
           onDelete={onDelete}
         />
