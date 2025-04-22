@@ -6,16 +6,18 @@
   font-family: Roboto;
 }
 .h1{
- 
- 
-    display: flex;
-   justify-content: center;
-   opacity: 0.8;
+   padding-left: 40px;
+   display: flex;
+   align-items: center;
+ width: 800px;
+ height: 80px;
+   background: var(--azul);
+  color: var(--branco);
 }
 
 .h2{
    font-size: var(--lg);
- 
+
 margin-bottom:  20px;
    
 }

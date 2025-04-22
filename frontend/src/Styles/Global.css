@@ -3,8 +3,8 @@
   --primary: #DDDDDD;
     --branco: #FFFFFF;
     --azul: #7695EC;
-   --border: #777777;
-
+   --border: #ccc;
+--cor-btn:#4CAF50;
    --black: #000000;
 
 
@@ -35,14 +35,8 @@
   display: flex;
   justify-content: center;
 align-items: center;
-height: 100vh;
+min-height: 100vh;
 }
-  .main-screen {
-    max-width: 400px;
-    margin: 100px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-  }
+
  
   
