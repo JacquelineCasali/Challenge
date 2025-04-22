@@ -4,12 +4,16 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import SearchProvider from "./context/searchContext";
 
+
+
 function App() {
  
 
   return (
   <>
-  <SearchProvider>
+<SearchProvider>
+
+
     <AppRoutes />
        <ToastContainer 
        toastStyle={{  backgroundColor: "black" ,color:"white"}}
@@ -17,7 +21,7 @@ function App() {
        autoClose={2000}
 
       />
-      </SearchProvider>
+  </SearchProvider>
   </>
 )
 

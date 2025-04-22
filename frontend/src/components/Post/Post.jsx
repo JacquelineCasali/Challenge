@@ -5,7 +5,8 @@ import CadastroPost from './CadastroPost';
 import PostList from './PostList';
 import { createPost, deletePost,  updatePost } from '../../services/api';
 import Search from '../Search/Search';
-import { SearchContext } from '../../context/searchContext';
+import { SearchContext } from '../../context/SearchContext';
+
 export default function Post({username}) {
   const {busca,setBusca,setPage,fetchAllPosts,sortOrder,setSortOrder,
     visiblePosts,hasMorePosts,handleLoadMore
