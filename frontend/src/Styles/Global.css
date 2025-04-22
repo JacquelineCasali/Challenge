@@ -33,6 +33,7 @@
   body {
     background-color: var(--primary);
     color:var(--black);
+    line-height: 100%;
   }
 .section{
   display: flex;

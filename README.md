@@ -33,10 +33,9 @@ Run the app: npm run dev
 
 Este projeto é uma aplicação frontEnd. O objetivo é criar uma interface interativa e responsiva para que o usuário possa gerenciar suas tarefas de forma prática.
 
-## Vídeo do Projeto 
+## Deploy
 
-
-
+https://challenge-ochre-theta.vercel.app/
 
 ## 🚀 Tecnologias Utilizadas
 

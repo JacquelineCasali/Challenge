@@ -3,10 +3,10 @@
     background: var(--white);
     /* padding: 1rem; */
     border: 1px solid var(--border);
-
+    overflow: hidden; 
     border-radius: 16px;
-   height: 316px;
-    margin:24px ;
+   /* height: 316px; */
+    margin:24px 24px 0 24px ;
   }
   
   .post-header {
@@ -40,8 +40,13 @@
     color: var(--text-gray);
   }
   .post-content {
-  margin:  0 24px;
+  margin:  0 24px 24px 24px;
    width: 704px;
    font-size: var(--ms);
+   white-space: pre-line;
+ 
   }
-  
+  .likes{
+ display: flex;
+  justify-content: space-between; margin: 0 24px 16px; 
+  }

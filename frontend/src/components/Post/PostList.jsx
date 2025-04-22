@@ -20,7 +20,7 @@ export default function PostList({posts, username, onUpdate, onDelete}) {
   <option value="recent">Mais recentes</option>
   <option value="oldest">Mais antigos</option>
 </select> */}
-      {posts.map(post => (
+      {posts.map((post) => (
         <PostItem 
           key={post.id} 
           post={post}

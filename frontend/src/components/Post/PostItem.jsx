@@ -8,8 +8,12 @@ import DeleteModal from '../Modal/DeleteModal';
 export default function PostItem({ post, isOwner, onUpdate, onDelete }) {
     const [isEditing, setIsEditing] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [likes, setLikes] = useState(post.likes || 0);
+    const handleLike = () => {
+      setLikes(prev => prev + 1);
+     
+    };
   
-
   return (
     <div className="post-item">
      <div className="post-header">
@@ -45,7 +49,11 @@ export default function PostItem({ post, isOwner, onUpdate, onDelete }) {
    
 
       <p className="post-content">{post.content}</p>
-
+      <div className='likes'>
+        <button onClick={handleLike} style={{ cursor: 'pointer' }}>
+          👍 {likes}
+        </button>
+        </div>
       {isEditing && (
         <EditModal
           title={post.title}
