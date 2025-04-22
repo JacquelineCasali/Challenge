@@ -1,75 +1,34 @@
 ## 🖥️ Frontend - Task Manager Challenge
 
-This project is the frontend implementation of a simple Task Management App. The goal is to build a responsive and interactive interface that allows users to manage their tasks efficiently.
+## Description / Descrição
 
-## Project Video
+This project is a web application that simulates a posting platform, allowing users to create, edit, delete, and interact with posts. The challenge aims to test front-end development skills, including API handling, styling, and creating an interactive user interface.
 
-## 📌 Features
-✅ User sign-up screen (simple username input)
-📄 Task list screen
-➕ Add new task
-📝 Edit existing task (modal)
-❌ Delete task (with confirmation)
-
-💾 Auto-save new task on creation
+Este projeto é uma aplicação web que simula uma plataforma de postagens, permitindo que os usuários criem, editem, excluam e interajam com posts. O desafio visa testar habilidades de desenvolvimento front-end, incluindo manipulação de APIs, estilização e criação de uma interface de usuário interativa.
 
 
-🛠️ Tech Stack 
+## Technologies Used / Tecnologias Utilizadas
+Frontend: React.js, Vite, JavaScript, CSS
 
-✅React with vite
-✅css
-✅Axios 
-✅Context API
+Backend: CodeLeap API (https://dev.codeleap.co.uk/careers/)
 
-## 🚀 Getting Started
+Libraries: date-fns (for date manipulation), Axios (for API calls)
 
-Clone the repository
-Install dependencies: npm install
-Run the app: npm run dev
-
-## 📌 Desafio Técnico - Desafio de Gerenciador de Tarefas
-
-## 📝 Sobre o Projeto
-
-Este projeto é uma aplicação frontEnd. O objetivo é criar uma interface interativa e responsiva para que o usuário possa gerenciar suas tarefas de forma prática.
+Bibliotecas: date-fns (para manipulação de datas), Axios (para chamadas de API)
 
 ## Deploy
 
 https://challenge-ochre-theta.vercel.app/
 
-## 🚀 Tecnologias Utilizadas
 
+## 📌 Installation / Instalação
+To run the project locally, follow these steps:
 
-Front-end React.js
-React.js: Biblioteca para construção da interface do usuário.
-Context API: Gerenciamento de estado global para autenticação e dados compartilhados.
-Axios: Comunicação com a API.
-CSS Puro: Estilização personalizada da interface.
+Para rodar o projeto localmente, siga os seguintes passos:
 
-## ⚙️ Funcionalidades
+1️⃣ Clone the repository:
 
-🔹 Cadastro de Usuário
-
-✅ Criar, listar, editar e excluir usuário
-
-🔹 Tarefas
-
-✅ Criar, listar, editar, deletar  filtrar por tarefas e excluir tarefas
-
-
-🔹 Autenticação e Login
-
-✅ Login e logout com Context API
-
-✅ Proteção de rotas baseadas em autenticação
-
-✅ Exibição do nome do usuário na navbar
-
-## 📌 Como Rodar o Projeto
-
-1️⃣ Clonar o repositório
-
-https://github.com/JacquelineCasali/Desafio-T-cnico---CRUD-de-Tarefas.git
+https://github.com/JacquelineCasali/Challenge-
 
 Rodar o front-end (React.js)
 
@@ -77,7 +36,43 @@ Rodar o front-end (React.js)
 ✅ $ npm install
 ✅ $ npm run dev
 
+## How to Use / Como Usar
+Main Screen: On the main screen, you will see posts created by users.
 
+Create Post: Click the button to add a new post. Fill in the required fields and submit.
 
-## 📝 Projeto Desenvolvido por 
+Edit Post: Click on an existing post to edit it. You can modify the title and content.
+
+Delete Post: Delete posts via the confirmation modal.
+
+Like and Comment: Posts can be liked and commented on directly from the interface.
+
+Tela principal: Na tela inicial, você verá os posts criados pelos usuários.
+
+Criar Post: Clique no botão para adicionar um novo post. Preencha os campos necessários e envie.
+
+Editar Post: Clique em um post existente para editá-lo. Você pode modificar o título e o conteúdo.
+
+Excluir Post: Exclua posts através do modal de confirmação.
+
+Curtir e Comentar: Os posts podem ser curtidos e comentados diretamente na interface.
+
+## Features / Funcionalidades
+CRUD for Posts: Create, read, update, and delete posts.
+
+Filter and Sort: Filter and sort posts based on creation time and other properties.
+
+Interaction: Like, comment, and mention within posts.
+
+Infinite Scroll: Dynamically load posts as the user scrolls down.
+
+CRUD de Posts: Criação, leitura, atualização e exclusão de posts.
+
+Filtro e Ordenação: Filtragem e ordenação de posts com base no tempo de criação e outras propriedades.
+
+Interação: Curtidas, comentários e menções dentro dos posts.
+
+Scroll Infinito: Carregamento dinâmico de posts à medida que o usuário rola a página.
+
+## 📝 Author / Autor
 Jacqueline Casali

@@ -45,4 +45,10 @@ h3{
   margin-bottom: 0;
 }
  
+@media (max-width: 768px) {
+  .section{
+      width: auto;
   
+  }
+}
+

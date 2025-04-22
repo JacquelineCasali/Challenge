@@ -25,6 +25,8 @@
  .post-title{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 24px 24px 10px 24px;
 }
   
@@ -40,13 +42,84 @@
     color: var(--text-gray);
   }
   .post-content {
-  margin:  0 24px 24px 24px;
-   width: 704px;
-   font-size: var(--ms);
-   white-space: pre-line;
+    margin: 0 24px 24px 24px;
+    font-size: var(--ms);
+    white-space: pre-line;
+    word-break: break-word;
+    max-width: 100%;
  
   }
   .likes{
- display: flex;
-  justify-content: space-between; margin: 0 24px 16px; 
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    margin: 0 24px 16px;
+    flex-wrap: wrap; 
   }
+
+  .comments {
+    margin: 0 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .comments input {
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .comments button {
+    align-self: flex-start;
+    padding: 0.4rem 1rem;
+    background-color: var(--azul);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .comments button:hover {
+    background-color: #004d99; /* mais escuro que var(--azul) */
+  }
+  
+  .mentions {
+    margin: 0 24px 16px;
+    font-size: 0.9rem;
+    color: var(--azul);
+  }
+  @media (max-width: 768px) {
+    .post-item {
+      margin: 16px 12px;
+    }
+  
+    .post-header {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      gap: 8px;
+      padding: 16px;
+    }
+    .post-title {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+  
+    .comments button {
+      width: 100%;
+    }
+  
+    .modals {
+      padding: 24px;
+    }
+  
+    .signup {
+      width: 90%;
+    }
+  }
+  
+  

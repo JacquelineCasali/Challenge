@@ -1,8 +1,4 @@
-.div{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-}
+
 .post{
     background: var(--white);
     max-width: 800px;
@@ -35,5 +31,12 @@ select{
   
   }
   
-
+/* Responsividade */
+@media (max-width: 768px) {
+    .post {
+        padding: 0 12px;
+      }
+    
+  }
+  
 
