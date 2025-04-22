@@ -5,12 +5,13 @@ import CadastroPost from './CadastroPost';
 import PostList from './PostList';
 import { createPost, deletePost,  updatePost } from '../../services/api';
 import Search from '../Search/Search';
-import { SearchContext } from '../../context/SearchContext';
+import { BuscaContext } from '../../context/BuscaContext';
+
 
 export default function Post({username}) {
   const {busca,setBusca,setPage,fetchAllPosts,sortOrder,setSortOrder,
     visiblePosts,hasMorePosts,handleLoadMore
-  }=useContext(SearchContext)
+  }=useContext(BuscaContext)
     const handleCreate = async ({ title, content }) => {
         await createPost({ username, title, content });
         setPage(1);

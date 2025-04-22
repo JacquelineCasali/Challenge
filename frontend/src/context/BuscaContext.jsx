@@ -3,8 +3,8 @@ import { getPosts } from "../services/api";
 
 
 
-export const SearchContext = createContext()
-export default function SearchProvider({children}) {
+export const BuscaContext = createContext()
+export default function BuscaProvider({children}) {
 
   const [allPosts, setAllPosts] = useState([]);
   const [visiblePosts, setVisiblePosts] = useState([]);
@@ -66,7 +66,7 @@ export default function SearchProvider({children}) {
     const hasMorePosts = visiblePosts.length < filteredLength;
   
     return (
-        <SearchContext.Provider value={{busca,setBusca,setSortOrder,
+        <BuscaContext.Provider value={{busca,setBusca,setSortOrder,
         hasMorePosts,handleLoadMore,
         
         visiblePosts, sortOrder, setPage, fetchAllPosts
@@ -74,7 +74,7 @@ export default function SearchProvider({children}) {
         
         }}>
         {children}
-        </SearchContext.Provider>
+        </BuscaContext.Provider>
   
   
      )

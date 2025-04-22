@@ -2,7 +2,8 @@
 import AppRoutes from "./Routes/Routes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
-import SearchProvider from "./context/searchContext";
+import SearchProvider from "./context/BuscaContext";
+import BuscaProvider from "./context/BuscaContext";
 
 
 
@@ -11,7 +12,7 @@ function App() {
 
   return (
   <>
-<SearchProvider>
+<BuscaProvider>
 
 
     <AppRoutes />
@@ -21,7 +22,7 @@ function App() {
        autoClose={2000}
 
       />
-  </SearchProvider>
+  </BuscaProvider>
   </>
 )
 
