@@ -37,13 +37,14 @@ export default function CadastroPost({onSubmit}) {
         rows={3}
       />
           </div>
-    <div className='btn-login'>
+          <div className='btn-login'>
     <button 
         onClick={handleSubmit} 
         disabled={!title.trim() || !content.trim()}
         className={!title.trim() || !content.trim() ? 'disabled' : ''}
         >Create</button>
     </div>
+   
    
 
   

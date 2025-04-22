@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
+ 
   --primary: #DDDDDD;
-    --branco: #FFFFFF;
+  --white: #fff;
     --azul: #7695EC;
+    --text-gray: #777777;
    --border: #ccc;
 --cor-btn:#4CAF50;
    --black: #000000;
-
+--disabled:#a8c2f2;
 
 --m:16px;
+--ms:18px;
 --lg:22px;
 
 
@@ -37,6 +40,8 @@
 align-items: center;
 min-height: 100vh;
 }
-
+h3{
+  margin-bottom: 0;
+}
  
   

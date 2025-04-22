@@ -23,7 +23,7 @@ export default function EditModal({ title, content, onClose, onSave }) {
       <div className="modals">
  
      
-        <Title text="Edit Post"/>
+        <Title text="Edit Item"/>
         <label htmlFor="">Title</label>
         <input
           type="text"

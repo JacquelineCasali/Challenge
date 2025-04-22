@@ -2,7 +2,7 @@
  {
   max-width: 500px;
  height: 205px;
-  background: white;
+  background: var(--white);
   padding: 20px;
   border-radius: 8px;
 }
@@ -12,24 +12,24 @@
   justify-content: flex-end;
 }
 button{
- width: 111px;
+ width: 120px;
 height: 32px;
 margin-top: 10px;
 border-radius: 8px;
 border: none;
 background: var(--azul);
-color: var(--branco);
+color: var(--white);
 cursor: pointer;
 }
 button.disabled,
 button.disabled:hover{
-  background-color: #aaa;
+  background-color:var(--disabled);
   cursor: not-allowed;
 }
 
 button:hover,
 button:active {
   background:rgb(13, 110, 253);
-  color: var(--branco);
+  color: var(--white);
   
 }

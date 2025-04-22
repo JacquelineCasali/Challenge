@@ -12,10 +12,11 @@
 }
 
 .modals{
-    background-color: var(--branco);
-    padding: 32px;
+    background-color: var(--white);
+    padding:  32px;
     border-radius: 16px;
-    width: 500px;
+    width: 660px;
+ 
     max-width: 90%;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 
@@ -36,7 +37,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 16px;
-    margin-top: 16px;
+    margin-top: 30px;
   }
   .btn {
     padding: 8px 20px;

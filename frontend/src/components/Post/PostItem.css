@@ -1,30 +1,47 @@
 
 .post-item {
-    background: white;
+    background: var(--white);
     /* padding: 1rem; */
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
 
-    border-radius: 8px;
-    padding: 24px;
-    margin:24px 24px ;
+    border-radius: 16px;
+   height: 316px;
+    margin:24px ;
   }
   
   .post-header {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: flex-start;
     align-items: center;
+    padding:  0 24px;
+    height: 70px;
+    background: var(--azul);
+    border-radius: 16px 16px 0 0 ;
+    color: var(--white);
+
   }
   
-  .post-actions button {
-    margin-left: 0.5rem;
-  }
+ .post-title{
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 24px 10px 24px;
+}
   
   .post-meta {
-    font-size: 0.8rem;
-    color: gray;
-    margin-top: 0.25rem;
+    font-size: var(--ms);
+    color: var(--text-gray);
+     font-weight: 700;
+
+   
+  }
+  .span{
+    font-weight: 400;
+    color: var(--text-gray);
+  }
+  .post-content {
+  margin:  0 24px;
+   width: 704px;
+   font-size: var(--ms);
   }
   
-  .post-content {
-    margin-top: 0.5rem;
-  }

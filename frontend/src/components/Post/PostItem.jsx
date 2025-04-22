@@ -4,7 +4,7 @@ import "./PostItem.css"
 import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
 import EditModal from '../Modal/EditModal';
 import DeleteModal from '../Modal/DeleteModal';
-import Modal from '../Modal/Modal';
+
 export default function PostItem({ post, isOwner, onUpdate, onDelete }) {
     const [isEditing, setIsEditing] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -16,28 +16,33 @@ export default function PostItem({ post, isOwner, onUpdate, onDelete }) {
         <h3>{post.title}</h3>
         {isOwner && (
           <div className="post-actions">
+                  <FaRegTrashAlt
+                  className="me-4"
+                  onClick={() => setIsDeleting(true)}
+                    size={20}
+                    color={"white"}
+                    cursor={"pointer"}
+                  />
+     
+             
               <FaRegEdit
-                    className="me-3"
+                    
                     onClick={() => setIsEditing(true)}
                     size={20}
-                    color={"blue"}
+                    color={"white"}
                     cursor={"pointer"}
                   />
-                     <FaRegTrashAlt
-                    onClick={() => setIsDeleting(true)}
-                    size={20}
-                    color={"red"}
-                    cursor={"pointer"}
-                  />
-            {/* <button onClick={() => setIsEditing(true)}>Edit</button>
-            <button onClick={() => setIsDeleting(true)}>Delete</button> */}
+                
           </div>
         )}
       </div>     
-     
-      <p className="post-meta">
-        @{post.username} • {formatDistanceToNow(new Date(post.created_datetime), { addSuffix: true })}
-      </p>
+     <div className='post-title'>
+     <span className="post-meta">
+        @{post.username} 
+       </span>
+      <span className='span'> {formatDistanceToNow(new Date(post.created_datetime))}</span>
+     </div>
+   
 
       <p className="post-content">{post.content}</p>
 

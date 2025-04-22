@@ -1,19 +1,19 @@
 .post{
-    background: var(--branco);
-    width: 800px;
-height: 1080px;
+    background: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 .post-form{
     border: 1px solid var(--border);
-    border-radius: 16px;
-    height: 334px;
-  margin:24px 24px ;
-  opacity: 0.8;
-padding: 24px;
-max-width: 752px;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px;
+
 }
 .text{
     display: flex ;
         flex-direction: column;
         margin: 20px 0 5px;
 }
+
