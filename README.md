@@ -6,6 +6,8 @@ This project is a web application that simulates a posting platform, allowing us
 
 Este projeto é uma aplicação web que simula uma plataforma de postagens, permitindo que os usuários criem, editem, excluam e interajam com posts. O desafio visa testar habilidades de desenvolvimento front-end, incluindo manipulação de APIs, estilização e criação de uma interface de usuário interativa.
 
+## Video
+![Video_2025-04-23_071243](https://github.com/user-attachments/assets/e203e9f9-4468-46ac-a4f4-2f12e95e440c)
 
 ## Technologies Used / Tecnologias Utilizadas
 Frontend: React.js, Vite, JavaScript, CSS
@@ -26,6 +28,7 @@ To run the project locally, follow these steps:
 
 Para rodar o projeto localmente, siga os seguintes passos:
 
+
 1️⃣ Clone the repository:
 
 https://github.com/JacquelineCasali/Challenge-
@@ -33,7 +36,9 @@ https://github.com/JacquelineCasali/Challenge-
 Rodar o front-end (React.js)
 
 ✅ $ cd frontend
+
 ✅ $ npm install
+
 ✅ $ npm run dev
 
 ## How to Use / Como Usar
@@ -58,21 +63,21 @@ Excluir Post: Exclua posts através do modal de confirmação.
 Curtir e Comentar: Os posts podem ser curtidos e comentados diretamente na interface.
 
 ## Features / Funcionalidades
-CRUD for Posts: Create, read, update, and delete posts.
+✅ CRUD for Posts: Create, read, update, and delete posts.
 
-Filter and Sort: Filter and sort posts based on creation time and other properties.
+✅ Filter and Sort: Filter and sort posts based on creation time and other properties.
 
-Interaction: Like, comment, and mention within posts.
+✅ Interaction: Like, comment, and mention within posts.
 
-Infinite Scroll: Dynamically load posts as the user scrolls down.
+✅ Infinite Scroll: Dynamically load posts as the user scrolls down.
 
-CRUD de Posts: Criação, leitura, atualização e exclusão de posts.
+✅ CRUD de Posts: Criação, leitura, atualização e exclusão de posts.
 
-Filtro e Ordenação: Filtragem e ordenação de posts com base no tempo de criação e outras propriedades.
+✅ Filtro e Ordenação: Filtragem e ordenação de posts com base no tempo de criação e outras propriedades.
 
-Interação: Curtidas, comentários e menções dentro dos posts.
+✅ Interação: Curtidas, comentários e menções dentro dos posts.
 
-Scroll Infinito: Carregamento dinâmico de posts à medida que o usuário rola a página.
+✅ Scroll Infinito: Carregamento dinâmico de posts à medida que o usuário rola a página.
 
 ## 📝 Author / Autor
 Jacqueline Casali
